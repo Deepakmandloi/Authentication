@@ -1,0 +1,26 @@
+{
+  "name": "authentication-project",
+  "version": "1.0.0",
+  "description": "Register and login ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deepakmandloi/Authentication.git"
+  },
+  "author": "Deepak Mandloi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deepakmandloi/Authentication/issues"
+  },
+  "homepage": "https://github.com/Deepakmandloi/Authentication#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "nodemon": "^3.0.2"
+  }
+}
