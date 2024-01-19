@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 function connectMongoDB(uri){
-    return mongoose.connect(uri).then(()=>{
+    return mongoose.connect(uri)
+    .then(()=>{
         console.log("connected with mongodb");
     })
     .catch((error) =>{
