@@ -1,7 +1,7 @@
 const express = require('express');
+const router = express.Router();
 const User = require('../models/users');
 const bcrypt = require("bcrypt");
-const router = express.Router();
 const jwt = require("jsonwebtoken");
 const jwtSecretKey = process.env.jwtSecretKey;
 const {body, validationResult} = require("express-validator");

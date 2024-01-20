@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema({
     }
 });
 
+userSchema.statics.findByEmail = async function(email) {
+    return this.findOne({ email });
+};
+
 const User = mongoose.model('Users', userSchema);
 User.createIndexes();
 module.exports = User;

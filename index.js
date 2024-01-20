@@ -14,8 +14,10 @@ app.use(express.json());
 // routes
 const registerRotute = require("./routes/Register");
 app.use('/register', registerRotute);
-
-
+const loginRoute = require("./routes/login");
+app.use('/login', loginRoute);
+const getUser = require('./routes/getUser');
+app.use('/getUser', getUser);
 
 app.get('/', (req, res) => {
     res.send("this is your default page");
