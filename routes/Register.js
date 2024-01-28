@@ -27,7 +27,7 @@ router.post('/', nameValidator(), emailValidator(), async (req, res) => {
         })
         // generating token based on id for better speed
         const data = {
-            newUser:{
+            user:{
                 id: newUser.id
             }
         }
